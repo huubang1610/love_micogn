@@ -9,7 +9,6 @@
   bottom: 0;
   left: 0;
   opacity: .8;
-  /* height: 100vh; */
   z-index: 0;
   background-repeat: no-repeat;
   background-image: url(../img/bg.webp);
@@ -40,7 +39,7 @@ header h4 {
   text-align: center;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 932px) {
   header h2 {
     font-family: 'Pacifico';
     font-size: 45px;
@@ -52,41 +51,23 @@ header h4 {
     text-align: center;
     padding: 15px;
   }
-  #no{
-    position: absolute;
-    display: inline-block;
-    left: 7%; 
-    top: 40vh;
-    font-size: 14px;
-    padding: 3px;
-    -webkit-transition: all 0.1s ease-out;
-  }
-  #yes{
-    position: absolute;
-    display: inline-block;
-    left: 58%; 
-    top: 40vh;
-    font-size: 14px;
-    padding: 3px;
-    -webkit-transition: all 0.3s ease-out;
-  }
 }
 
 .swal2-backdrop-show{
   background-size: 200px 100px !important;
 }
 .letter {
-  width: 70%;
-  margin: 50px auto;
+  width: 80%;
+  margin: 40px auto;
   padding: 20px;
   background-color: #FFCCCC;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
   position: relative;
   z-index: 1;
-  font-family: Arial, sans-serif; /* Sử dụng font chữ Arial hoặc font chữ không có Serif cho toàn bộ trang */
-  font-size: 14px; /* Đặt kích thước chữ mặc định là 16px */
-  line-height: 1.5; /* Đặt độ dài của mỗi dòng chữ */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
 }
 .heart-button {
   background-color: transparent;
@@ -98,19 +79,47 @@ header h4 {
   transform: translate(-50%, -50%);
 }
 .heart-icon {
-  width: 100px; /* Đặt kích thước cho hình trái tim */
+  width: 100px;
   height: auto;
-  fill: pink; /* Màu hồng cho hình trái tim */
-  margin-right: 5px;
+  fill: pink;
+  margin-right: 7px;
+}
+
+@media only screen and (max-width: 932px) {
+  .heart-button {
+    height: auto;
+    fill: pink;
+  }
+
+  .heart-icon {
+    width: 85px;
+    height: auto;
+    fill: pink;
+    margin: 20px 10px 20px 30px;
+  }
+  .heart-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 15px;
+    transform: translate(-50%, -50%);
+  }
+  .button-text {
+    margin: auto;
+    font-size: 10px;
+  }
 }
 .button-text {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font chữ */
-  font-size: 15px; /* Kích thước chữ cho text */
-  color: white; /* Màu chữ */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: white;
   position: relative;
-  left: -90px; /* Điều chỉnh vị trí của văn bản bên trong hình trái tim */
+  left: -90px;
   top: -5px;
   font-weight: bold; /* Đậm chữ */
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Hiệu ứng bóng chữ */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   letter-spacing: 1px; /* Khoảng cách giữa các chữ cái */
 }

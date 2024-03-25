@@ -1,8 +1,9 @@
 const CONFIG = {
     introTitle: 'Chào công chúa!',
-    introDesc: `Cũng lâu rồi không được ngồi tâm sự gì với em 
-    nhỉ😘😘. Nghĩ đến em mà muốn nổ tung cái đầu của anh hihi`,
-    btnIntro: 'Đi tiếp nhé',
+    introDesc: `Lâu rồi anh cũng chưa viết thư cho công túa nay thử viết cái mà chữ xấu 
+    quá nên anh đành sử dụng cái anh giỏi nhất là CODE và yêu EM để viết cho em mấy dòng😘😘.
+    Nhớ công túa lắm luôn á!!!!!! `,
+    btnIntro: 'Go thôi',
     title: '😘Gửi công chúa PHAN MINH NGỌC😘',
-    desc: 'Lâu lắm rồi chả thấy được nụ cười trên môi của em mà nhớ quá chời á... ',
+    desc: 'Lâu lắm rồi chưa thấy được nụ cười trên môi, cái nháy mắt của em mà nhớ quá chời á...💏💏 ',
 }
