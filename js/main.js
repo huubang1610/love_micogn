@@ -1,9 +1,12 @@
 $(document).ready(function() {
-    var audio = new Audio('sound/FallingYou.mp3');
-    audio.addEventListener('error', function() {
-        console.log('Lỗi khi phát âm thanh');
+    document.addEventListener('click', function() {
+        var audio = new Audio('sound/FallingYou.mp3');
+        audio.play().then(() => {
+            console.log('Phát âm thanh thành công');
+        }).catch(error => {
+            console.error('Lỗi khi phát âm thanh:', error.message);
+        });
     });
-    audio.play();
     setTimeout(function() {
         firstQuestion();
         $('.spinner').fadeOut();
