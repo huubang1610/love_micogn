@@ -1,12 +1,4 @@
 $(document).ready(function() {
-    document.addEventListener('click', function() {
-        var audio = new Audio('sound/FallingYou.mp3');
-        audio.play().then(() => {
-            console.log('Phát âm thanh thành công');
-        }).catch(error => {
-            console.error('Lỗi khi phát âm thanh:', error.message);
-        });
-    });
     setTimeout(function() {
         firstQuestion();
         $('.spinner').fadeOut();
@@ -37,6 +29,12 @@ function firstQuestion(){
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro
       }).then(function(){
+        var audio = new Audio('sound/FallingYou.mp3');
+        audio.play().then(() => {
+            console.log('Phát âm thanh thành công');
+        }).catch(error => {
+            console.error('Lỗi khi phát âm thanh:', error.message);
+        });
         $('.content').show(200);
       })
 }
