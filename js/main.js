@@ -1,6 +1,8 @@
 $(document).ready(function() {
-    // process bar
     var audio = new Audio('sound/FallingYou.mp3');
+    audio.addEventListener('error', function() {
+        console.log('Lỗi khi phát âm thanh');
+    });
     audio.play();
     setTimeout(function() {
         firstQuestion();
