@@ -71,6 +71,7 @@ header h4 {
 }
 .heart-button {
   background-color: transparent;
+  margin-left: 15px;
   border: none;
   cursor: pointer;
   outline: none;
@@ -85,7 +86,7 @@ header h4 {
   margin-right: 7px;
 }
 
-@media only screen and (max-width: 932px) {
+@media only screen and (max-width: 390px) {
   .heart-button {
     height: auto;
     fill: pink;
@@ -95,8 +96,44 @@ header h4 {
     width: 85px;
     height: auto;
     fill: pink;
-    margin: 20px 10px 20px 30px;
   }
+
+  .heart-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 40px;
+    transform: translate(-50%, -50%);
+  }
+
+  .button-text {
+    margin-left: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 8px;
+    color: white;
+    position: relative;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .heart-button {
+    height: auto;
+    fill: pink;
+  }
+
+  .heart-icon {
+    width: 85px;
+    height: auto;
+    fill: pink;
+    margin: 20px 10px 20px 20px;
+  }
+
   .heart-button {
     background-color: transparent;
     border: none;
@@ -107,11 +144,19 @@ header h4 {
     margin-left: 15px;
     transform: translate(-50%, -50%);
   }
+
   .button-text {
-    margin: auto;
-    font-size: 10px;
+    margin-left: -20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 8px;
+    color: white;
+    position: relative;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
   }
 }
+
 .button-text {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 15px;
@@ -119,7 +164,7 @@ header h4 {
   position: relative;
   left: -90px;
   top: -5px;
-  font-weight: bold; /* Đậm chữ */
+  font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  letter-spacing: 1px; /* Khoảng cách giữa các chữ cái */
+  letter-spacing: 1px;
 }
