@@ -29,7 +29,7 @@ function firstQuestion(){
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro
       }).then(function(){
-        var audio = new Audio('sound/FallingYou.mp3');
+        var audio = new Audio('sound/110055.mp3');
         audio.play().then(() => {
             console.log('Phát âm thanh thành công');
         }).catch(error => {
